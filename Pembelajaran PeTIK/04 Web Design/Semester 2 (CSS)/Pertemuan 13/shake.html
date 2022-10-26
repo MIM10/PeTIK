@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        /* gunakan 2 keyframes untuk jaga", sapa tau user menggunakan web yang tidak mendukung keyframes yang kita gunakan : @-webkit-keyframes & @keyframes */
+        @-webkit-keyframes animasi {
+            /* from {
+                top: 0px;
+                background-color: black;
+            }
+            to {
+                top: 200px;
+                background-color: blue;
+            } */
+
+
+            0% {
+                background-color: blue;
+            }
+            25% {
+                background-color: red;
+            }
+            50% {
+                background-color: darkcyan;
+            }
+            75% {
+                background-color: brown;
+            }
+            100% {
+                background-color: green;
+            }
+        }
+
+        @keyframes animasi {
+            /* from {
+                top: 0px;
+                background-color: black;
+            }
+            to {
+                top: 200px;
+                background-color: blue;
+            } */
+
+
+            0% {
+                background-color: blue;
+            }
+            25% {
+                background-color: red;
+            }
+            50% {
+                background-color: darkcyan;
+            }
+            75% {
+                background-color: brown;
+            }
+            100% {
+                background-color: green;
+            }
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translatey(0);
+            }
+
+            10%, 30%, 50%, 70%, 90% {
+                transform: translatey(100px);
+            }
+
+            20%, 40%, 60%, 80% {
+                transform: translatey(-100px);
+            }
+        }
+
+        .magic {
+            width: fit-content;
+            padding: 5rem;
+            background-color: black;
+            color: white;
+            animation-name: shake; /* manggil variable @keyframes animasi */
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="magic">Magic</div>
+</body>
+
+</html>

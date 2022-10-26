@@ -1,0 +1,71 @@
+* {
+    /* margin auto biar full body nya, gak ada jarak */
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar {
+    background-color: #a82525;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.konten {
+    display: flex;
+}
+
+.sidebar {
+    position: relative;
+    left: 0;
+    width: 10rem;
+    height: 89.3vh;
+    background-color: rgb(150, 151, 151);
+    margin-left: 0px;    
+}
+
+.sidebar li {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 1rem;
+    color: black;
+    margin-left: -10px;
+    transition: .4s;
+}
+
+ul li:hover {
+    padding-left: 10px;
+}
+
+.isi {
+    padding: 2rem;
+    padding-top: 4rem;
+    font-size: 1.1rem;
+    margin-left: -60rem;
+}
+
+.isi p {
+    padding-top: 1rem;
+    width: 40rem;
+    margin-left: .1rem;
+}
+
+.foto {
+    margin: 0px;
+}
+
+footer {
+    position: relative;
+    background-color: #a82525;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: .5rem 0rem;
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="ilham taufiq.svg"
+   inkscape:export-filename="ilham taufiq - caveat.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.5"
+     inkscape:cx="960"
+     inkscape:cy="540"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="247.53719"
+       y="301.4876"
+       width="1061.0587"
+       height="192.52646"
+       id="rect63" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="display:inline;fill:#000000"
+       id="rect403"
+       width="1964.4298"
+       height="1136.1322"
+       x="-22.214876"
+       y="-23.801653" />
+    <text
+       xml:space="preserve"
+       id="text61"
+       style="font-size:71.4596px;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:center;white-space:pre;shape-inside:url(#rect63);display:inline;fill:#ffffff"
+       transform="matrix(1.1941477,0,0,1.1941477,26.924794,123.05504)"
+       x="180.16338"
+       y="0"
+       inkscape:label="text61"><tspan
+         x="625.60727"
+         y="364.86614"
+         id="tspan281"><tspan
+           style="font-family:Caveat;-inkscape-font-specification:Caveat"
+           id="tspan279">Ilham Taufiq</tspan></tspan></text>
+  </g>
+</svg>
