@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mandiri 04</title>
+</head>
+
+<style>
+    body {
+        background-color: antiquewhite;
+        margin: 20px;
+    }
+
+    .box{
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nama {
+        padding-bottom: 20px;
+        padding-left: 2px;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+
+    }
+
+    .nama p {
+        margin-bottom: -5px;
+    }
+
+    fieldset {
+        width: 50vh;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+
+    .sblm {
+        text-decoration: underline 2px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="nama">
+        <p>Nama : Abdullah Qa'id Mu'aadz</p>
+        <p>Jurusan : Pengembangan Perangkat Lunak</p>
+        <p>Kelas : Mekkah</p>
+    </div>
+    <div class="box">
+        <fieldset>
+            <legend>Soal</legend>
+            <p class="sblm">Let teks = "Merah Putih"</p>
+            <p>1. Ubahlah variable teks menjadi uppercase</p>
+            <p>2. Ubahlah variable teks menjadi lowercase</p>
+            <p>3. Ubahlah "Putih" menjadi "Muda" dalam variable teks</p>
+            <p>4. Ukurlah Panjang (length) dari variable teks</p>
+        </fieldset>
+        <fieldset>
+            <legend>Jawaban</legend>
+            <p class="sblm" id="sblm"></p>
+            <p id="uper"></p>
+            <p id="lower"></p>
+            <p id="ubah"></p>
+            <p id="panjang"></p>
+        </fieldset>
+    </div>
+</body>
+
+<script>
+    let sblm = document.getElementById("sblm")
+    let uper = document.getElementById("uper")
+    let lower = document.getElementById("lower")
+    let ubah = document.getElementById("ubah")
+    let panjang = document.getElementById("panjang")
+
+    // Menampilkan teks awal
+    let teks = "\"Merah Putih\""
+    sblm.innerText = "Teks awal : " + teks
+
+    // Mengubah teks ke Uppercase
+    uper.innerText = "1. Uppercase : " + teks.toUpperCase()
+
+    // Mengubah teks ke Lowercase
+    lower.innerText = "2. Lowercase : " + teks.toLowerCase()
+
+    // Mengubah kata Putih menjadi Muda dalam variable teks
+    ubah.innerText = "3. Replace : " + teks.replace("Putih", "Muda")
+
+    // Mengukur panjang (length) variable teks
+    panjang.innerText = "4. Length : " + teks.length;
+</script>
+
+</html>
