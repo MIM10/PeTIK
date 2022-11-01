@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForLoop</title>
+
+    <style>
+        div {
+            padding: 12px;
+            margin: 5px;
+            background-color: white;
+            text-align: center;
+            width: 100px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    // for(let i = 0; i <= 10; i++) {
+    //     document.write("<div>" + i + "</div>")
+    // }
+
+
+    // let i = 0;
+    // while (i <= 10) {
+    //     document.write("<div>" + i + "</div>")
+    //     i++
+    // }
+
+
+    // let mahasantri = {
+    //     nama: "Zhongli",
+    //     umur: 3000,
+    //     asal: "Liyue",
+    //     kebangsaan: "Teyvat",
+    //     archon: "Geo",
+    // }
+    
+    // for (data in mahasantri) {
+    //     document.write("<div>" + mahasantri[data] + "</div>")
+    // }
+
+
+    // let siswa = [
+    //     "Arda",
+    //     "Elki",
+    //     "Amar",
+    //     "Adam",
+    //     "Faiz",
+    //     "Zaky",
+    //     "Daus",
+    //     "Maul",
+    //     "Bliy",
+    // ]
+    
+    // for (s of siswa) {
+    //     document.write("<div>" + s + "</div>")
+    // }
+
+
+    // for (let i = 1; i <= 10; i++) {
+    //     if (i == 4) {
+    //         continue
+    //     }
+    //     console.log(i)
+    // }
+
+
+    // let input = prompt("Masukan nilai kamu")
+    // let nilai = parseInt(input)
+    
+    let hasil = "E"
+    let keterangan = "Sangat tidak memuaskan"
+    
+    function grade(nilai) {
+        if (nilai >= 90) {
+        hasil = "S"
+        }
+        else if (nilai >= 80) {
+            hasil = "A"
+        }
+        else if (nilai >= 65) {
+            hasil = "B"
+        }
+        else if (nilai >= 45) {
+            hasil = "C"
+        }
+        else if (nilai >= 30) {
+            hasil = "D"
+        }
+        else {
+            hasil = hasil
+        }
+    }
+
+    function predikat(hasil) {
+        switch(hasil) {
+            case "S" :
+                keterangan = "Cumlaude"
+                break
+
+            case "A" :
+                keterangan = "Sangat Memuaskan"
+                break
+
+            case "B" :
+                keterangan = "Memuaskan"
+                break
+
+            case "C" :
+                keterangan = "Cukup"
+                break
+
+            case "D" :
+                keterangan = "Tidak Memuaskan"
+                break
+
+            case "E" :
+                keterangan = keterangan
+                break
+        }
+    }
+
+    function logic(a, b) {
+        if (a == 8 && b == 10) {
+            alert("True AND")
+        }
+        else if (a == 8 || b == 10) {
+            alert("True OR")
+        }
+        else {
+            alert("False")
+        }
+    }
+
+    // OPERATOR LOGIC
+    let nilai_a = prompt("Masukkan Nilai a")
+    let nilai_b = prompt("Masukkan Nilai b")
+
+    logic(nilai_a, nilai_b)
+
+    // grade(nilai)
+    // predikat(hasil)
+
+    // alert("Grade kamu adalah : " + hasil + "\nPredikat : " + keterangan)
+</script>
+
+</html>
