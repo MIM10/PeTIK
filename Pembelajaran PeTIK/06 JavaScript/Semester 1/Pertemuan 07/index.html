@@ -29,6 +29,48 @@
         hasil.innerText = "Nama Buah : " + keranjang["nama"] + "\nberjumlah : " + keranjang["jumlah"]
     }
 
+    const getArray = () => {
+        let buah = [
+            'Mangga',
+            'Apel',
+            'Pisang',
+            'Jeruk',
+        ]
+
+        for (b of buah) {
+            console.log(buah[0])
+        }
+    }
+
+    const getArrayObject = () => {
+        let hewan1 = {
+            nama : "Ayam",
+            kaki : "2",
+        }
+
+        let hewan2 = {
+            nama : "Sapi",
+            kaki : "4",
+        }
+
+        let hewan3 = {
+            nama : "Nyamuk",
+            kaki : "6",
+        }
+
+        let binatang = [
+            hewan1,
+            hewan2,
+            hewan3,
+        ]
+
+        for (b of binatang) {
+            console.log(b)
+        }
+    }
+
+    getArrayObject()
+
     const reset = () => {
         window.location.reload()
     }
