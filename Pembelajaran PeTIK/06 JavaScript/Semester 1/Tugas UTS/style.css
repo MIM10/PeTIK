@@ -1,0 +1,122 @@
+* {
+    border-color: rgb(193, 160, 255) ;
+    border-width: 0px;
+    font-family: monospace;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.kpl {
+    align-self: flex-start;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+.bdn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: antiquewhite;
+    padding: 3rem 3rem;
+    margin-bottom: 3.4rem;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 0px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: antiquewhite;
+    padding: 3rem 3rem;
+    margin-bottom: 74px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 0px;
+}
+
+.titel {
+    margin: -1px 0px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.bdn input {
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: large;
+    width: 50rem;
+    height: 1rem;
+    padding: 1rem;
+    background-color: rgb(236, 226, 255);
+    box-shadow: 0px 0px 3px 0px purple;
+}
+
+.addbtn {
+    padding: 0.6rem;
+    width: 14%;
+    margin-right: 5px;
+    background: #d9d9d9;
+    color: #555;
+    box-shadow: 0px 0px 3px 0px purple;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
+.addbtn:hover {
+    background-color: rgb(173, 52, 230);
+    color: aliceblue;
+}
+
+.hasil {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    margin-bottom: 1rem;
+    width: 50rem;
+    box-shadow: 0px 0px 5px 0px;
+    padding: 3.9rem 3.9rem;
+    border-radius: 5px;
+}
+
+#hasilblm {
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px purple;
+    background-color: rgb(236, 226, 255);
+    height: auto;
+}
+
+#hasiludh {
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px purple;
+    background-color: rgb(236, 226, 255);
+    height: auto;
+}
+
+footer {
+    position: relative;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+footer p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
