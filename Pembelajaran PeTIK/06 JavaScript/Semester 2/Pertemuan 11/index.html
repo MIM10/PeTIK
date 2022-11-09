@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT HANDLER</title>
+</head>
+
+<body>
+    <h4>OnClick - Event</h4>
+    <!-- <input type="button" value="Klik Saya" id="klik" onclick="alert('Hi, Selamat Pagi')"> -->
+    <!-- <ul id="menu">
+        <li><a href="https://tokopedia.com">Tokopedia</a></li>
+        <li><a href="https://shopee.co.id">Shopee</a></li>
+        <li><a href="https://lazada.co.id">Lazada</a></li>
+    </ul> -->
+    <form action="">
+        <input type="text" name="" id="" placeholder="Username">
+        <input type="password" name="" id="">
+        <button type="submit" id="simpan">Simpan</button>
+    </form>
+    
+</body>
+<script>
+    // let klik = document.getElementById("klik")
+    // klik.onclick = () => {
+    //     alert("Hi, Selamat Pagi")
+    // }
+    // klik.addEventListener("click", () => {
+    //     return alert("Hi, Selamat Pagi")
+    // })
+    // let menu = document.getElementById("menu")
+    // menu.onclick = (event) => {
+    //     event.preventDefault()
+    // }
+    let simpan = document.getElementById("simpan")
+    simpan.addEventListener("mouseenter",  () => {
+        simpan.style.display = ("none")
+    })
+</script>
+</html>

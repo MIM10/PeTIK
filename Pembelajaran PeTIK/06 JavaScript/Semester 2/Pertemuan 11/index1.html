@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+</head>
+
+<body>
+    <h4>On-Click Event</h4>
+    <input value="Klik Saya" type="button" id="klik">
+    <ul>
+        <li><a href="https://tokopedia.com">tokopedia</a></li>
+        <li><a href="https://shopee.co.id">shoope</a></li>
+        <li><a href="https://lazada.co.id">lazada</a></li>
+    </ul>
+</body>
+
+<script>
+    let klik = document.getElementById("klik");
+    // klik.onclick = () => {
+    //     alert("Hi, selamat pagi")
+    // }
+
+    klik.addEventListener("click", klik_saya())
+
+    const klik_saya = () => {
+        return alert("Hi, selamat pagi")
+    }
+
+    // klik.removeEventListener("click", klik_saya)
+</script>
+
+</html>
