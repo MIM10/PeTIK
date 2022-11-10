@@ -15,19 +15,26 @@ body {
 }
 
 .kpl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-self: flex-start;
     background-color: antiquewhite;
     width: 100%;
+}
+
+.kpl h1 {
+    margin-left:10px;
+    margin-right:10px;
 }
 
 .bdn{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
     background-color: antiquewhite;
+    margin: 6.8rem 0px;
     padding: 3rem 3rem;
-    margin-bottom: 3.4rem;
     border-radius: 7px;
     box-shadow: 0px 0px 5px 0px;
 }
@@ -156,23 +163,99 @@ body {
     transition: 0.3s;
 }
 
-/* #hasiludh {
-    padding: 1rem 0.5rem;
-    border-radius: 5px;
-    box-shadow: 0px 0px 3px 0px purple;
-    background-color: rgb(236, 226, 255);
-    height: auto;
-} */
-
 footer {
     position: relative;
     background-color: antiquewhite;
     width: 100%;
-    margin-top: 43px;
 }
 
 footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    
+    .kpl {
+        width: 100%;
+    }
+
+    .kpl h1 {
+        font-size: large;
+    }
+    
+    .bdn {
+        padding: 2rem 2rem;
+        margin: 10rem 0rem;
+    }
+    
+    #form {
+        padding: 1.5rem 2rem;
+    }
+    
+    .titel {
+        font-size: medium;
+    }
+
+    .jdl {
+        font-size: small;
+    }
+    
+    .bdn input {
+        width: 280px;
+        font-size: 11px;
+        height: 5px;
+        margin-bottom: -5px;
+    }
+    
+    .addbtn {
+        width: 20%;
+        padding: 0.6rem;
+        text-align: center;
+        font-size: 11px;
+    }
+    
+    .hasil {
+        width: 280px;
+        padding: 5px 30px;
+    }
+    
+    .hasil2 {
+        width: 280px;
+        padding: 5px 30px;
+    }
+    
+    .hasil h3,.hasil2 h3 {
+        margin: 1rem 0rem;
+        font-size: medium;
+    }
+
+    .isi-hasilblm1 .fw-bold {
+        font-size: 10px;
+        
+    }
+    
+    .isi-hasilblm1 .small {
+        font-size: 9px;
+    }
+    
+    .img1 {
+        width: 10px;
+    }
+    
+    .img2 {
+        width: 10px;
+    }
+    
+    footer {
+        margin-top: auto;
+    }
+    
+    footer p {
+        font-size: 10px;
+    }
 }
