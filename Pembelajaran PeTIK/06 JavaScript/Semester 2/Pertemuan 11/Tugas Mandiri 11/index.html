@@ -23,7 +23,8 @@
             display: flex;
             flex-direction: column;
             background: #045199;
-            text-align: center;align-items: center;
+            text-align: center;
+            align-items: center;
             padding: 1rem;
             margin: 1rem;
             width: 200px;
@@ -52,8 +53,8 @@
     <div class="container">
         <div class="boxes">
             <h4>Membuat Mouse Event (mouseover & mouseout)</h4>
-            <img src="https://blog.payrollbozz.com/wp-content/uploads/sites/28/2017/04/programmer.jpg" alt=""
-                onmouseover="GambarBaru()" onmouseout="GambarLama()">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://blog.payrollbozz.com/wp-content/uploads/sites/28/2017/04/programmer.jpg" alt="Smiley"
+                width="200" height="">
         </div>
         <div class="boxes">
             <h4>Membuat Keyboard Event (keypress)</h4>
@@ -76,11 +77,12 @@
 
 <script>
     // script mouse event
-    const GambarBaru = () => {
-        document.getElementById("gambar").src = "https://blog.payrollbozz.com/wp-content/uploads/sites/28/2017/04/programmer.jpg";
+    function bigImg(x) {
+        x.style.width = "210px";
     }
-    const GambarLama = () => {
-        document.getElementById("gambar").src = "https://www.kitapunya.net/wp-content/uploads/2020/03/tugas-seorang-programmer.jpg";
+
+    function normalImg(x) {
+        x.style.width = "200px";
     }
 
     // script keyboard event
