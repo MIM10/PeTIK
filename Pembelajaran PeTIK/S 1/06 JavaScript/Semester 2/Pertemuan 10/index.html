@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORK WITH DOCUMENT</title>
+    <style>
+        #box {
+            margin: 20px;
+            width: fit-content;
+            padding: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+    </div>
+
+    <select onchange="ubahWarna(this)" name="warna" id="warna">
+        <option value="blue">biru</option>
+        <option value="black">hitam</option>
+        <option value="yellow">kuning</option>
+        <option value="green">hijau</option>
+    </select>
+</body>
+<script>
+    // membuat function ubah warna
+    const ubahWarna = () => {
+
+        // melakukan inisialisasi variabel
+        let warna = document.getElementById("warna")
+        let box = document.getElementById("box")
+        let value = warna.value
+        
+        // membuat percabangan kondisi
+        if (value == "blue") {
+            box.style.background = "blue"
+        } else if (value == "black") {
+            box.style.background = "black"
+        } else if (value == "yellow") {
+            box.style.background = "yellow"
+        } else if (value == "green") {
+            box.style.background = "green"
+        }
+    }
+</script>
+
+</html>

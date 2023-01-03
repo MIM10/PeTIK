@@ -1,0 +1,51 @@
+.nav {
+    text-decoration: none;
+    background-color : blue;
+    padding: 5px;
+    margin-left: 300px;
+    width: fit-content;
+    background-size: auto;
+}
+.nav a {
+    text-decoration: none;
+    color: rgb(180, 187, 194);
+    margin-right: 5px;
+}
+.nav .navtitle {
+    font-weight: bold;
+    color: white;
+}
+input[type="text"] {
+    width: 120px;
+    border-radius: 5px;
+}
+input[type="button"] {
+    border-radius: 5px;
+}
+.form1 {
+    margin-left: 900px;
+}
+.teks1 {
+    margin-left: 315px;
+    margin-top: 30px;
+}
+.text {
+    margin-left: 271px;
+    margin-top: 30px;
+}
+.text1 {
+    margin-bottom: 10px;
+    list-style: none;
+}
+.text2 {
+    margin-bottom: 10px;
+    list-style: none;
+}
+.lis3 {
+    margin-top: 15px;
+}
+.sumit {
+    background-color: rgb(59, 59, 255);
+    border-radius: 5px;
+    color: white;
+}

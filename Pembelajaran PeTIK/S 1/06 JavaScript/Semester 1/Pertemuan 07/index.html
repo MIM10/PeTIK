@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT</title>
+</head>
+
+<body>
+    <h2>Inputan Objek</h2>
+    <h4 id="hasil"></h4>
+    <input type="text" id="buah" placeholder="Masukkan Nama Buah">
+    <input type="number" id="jumlah" placeholder="Masukkan Jumlah">
+    <button type="button" id="simpan" onclick="getData()">Simpan</button>
+    <button id="button" onclick="reset()">Reset</button>
+</body>
+<script>
+    const getData = () => {
+        let buah = document.getElementById("buah").value
+        let jumlah = document.getElementById("jumlah").value
+        let hasil = document.getElementById("hasil")
+        
+        let keranjang = {
+            "nama" : buah,
+            "jumlah" : jumlah
+        }
+
+        hasil.innerText = "Nama Buah : " + keranjang["nama"] + "\nberjumlah : " + keranjang["jumlah"]
+    }
+
+    const getArray = () => {
+        let buah = [
+            'Mangga',
+            'Apel',
+            'Pisang',
+            'Jeruk',
+        ]
+
+        for (b of buah) {
+            console.log(buah[0])
+        }
+    }
+
+    const getArrayObject = () => {
+        let hewan1 = {
+            nama : "Ayam",
+            kaki : "2",
+        }
+
+        let hewan2 = {
+            nama : "Sapi",
+            kaki : "4",
+        }
+
+        let hewan3 = {
+            nama : "Nyamuk",
+            kaki : "6",
+        }
+
+        let binatang = [
+            hewan1,
+            hewan2,
+            hewan3,
+        ]
+
+        for (b of binatang) {
+            console.log(b)
+        }
+    }
+
+    getData()
+
+    const reset = () => {
+        window.location.reload()
+    }
+</script>
+
+</html>

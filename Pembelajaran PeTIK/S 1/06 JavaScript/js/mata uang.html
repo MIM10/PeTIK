@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aplikasi Konversi Mata Uang</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<br><br><br>
+<h1 align="center">Aplikasi Konversi Mata Uang</h1><br>
+
+<table border="1" class="border border-success" align="center" width="700" height="200">
+	<tr>
+	<td align="center"> Mata Uang Asal<br><br>
+		<div class="container">
+		<form id="pilihan1" name="form1">
+
+			<select id="pilih1" class="form-control">
+			  	<option value="rupiah">Indonesia-Rupiah</option>
+			  	<option value="pound">Inggris-Poundsterling</option>
+			  	<option value="dollar">Amerika-Dollar</option>
+			</select>
+
+		</form>
+
+		<br><input id="inputan" class="form-control" type="text" placeholder="" name=""><br>
+
+			<input type="button" class="btn btn-success" onclick="hitung()" name="" value="Hitung">
+
+	</td>
+
+	<td align="center"> Mata Uang Tujuan<br><br>
+		<div class="container">
+		<form id="pilihan2" name="form2">
+			<select id="pilih2" class="form-control">
+			  	<option value="rupiah">Indonesia-Rupiah</option>
+			  	<option value="pound">Inggris-Poundsterling</option>
+			  	<option value="dollar">Amerika-Dollar</option>
+			</select>
+		</form>
+		<br>
+	          Hasilnya : <span id="tampil">0</span>
+		</form>
+	</td>
+
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+	function hitung() {
+		
+		var x = document.getElementById('pilihan1').pilih1.value;
+		var y = document.getElementById('pilihan2').pilih2.value;
+		var masukan = parseFloat(inputan.value);
+
+		if (x == "rupiah" && y == "rupiah" || x == "pound" && y == "pound" || x == "dollar" && y == "dollar") {
+
+			var hasil = masukan ;
+
+			document.getElementById("tampil").innerHTML = hasil;
+
+		} else if (x == "rupiah" && y == "dollar") {
+
+			hasil = masukan * 0.000071;
+
+			document.getElementById("tampil").innerHTML = hasil;
+		}else if (x == "rupiah" && y == "pound") {
+
+			hasil = masukan * 0.000053;
+
+			document.getElementById("tampil").innerHTML = hasil;
+		}else if (x == "pound" && y == "rupiah") {
+			hasil = masukan / 0.000053;
+
+			document.getElementById("tampil").innerHTML = hasil;
+		}else if (x == "pound" && y == "dollar") {
+			hasil = masukan * 1.34;
+
+			document.getElementById("tampil").innerHTML = hasil;
+		}else if (x == "dollar" && y == "rupiah") {
+			hasil = masukan / 0.000071;
+
+			document.getElementById("tampil").innerHTML = hasil;
+		}else if (x == "dollar" && y == "pound") {
+			hasil = masukan / 1.34;
+
+			document.getElementById("tampil").innerHTML = hasil;
+		}
+
+	}
+
+
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Merubah Warna</title>
+
+</head>
+<body>
+	<p align="center" style="font-size: 25px">MERUBAH WARNA BACKGROUND & WARNA TEKS</p>
+<table align="center">
+	<tr>
+		<td colspan="2">
+			<div align="center" id="box">
+				<div id="text" align="center"><br><br><br><br>
+					<p align="center" style="font-size: 23px">Text</p><br><br>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div style="float:left;" align="center">
+			 <p align="center">Background</p>
+             <select id="slt"  onchange="chang_Color()">
+				<option value="black">Hitam</option>
+				<option value="blue">Biru</option>
+				<option value="yellow">Kuning</option>
+				<option value="aqua">Aqua</option>
+				<option value="red">Merah</option>
+				<option value="green">Hijau</option>
+            </select>
+        </div>
+		</td>
+		<td>
+			<div style="float: right;" align="center">
+			<p align="center">Text</p>
+            <select id="slt1"  onchange="chang_Color()">
+	            <option value="black">Hitam</option>
+				<option value="blue">Biru</option>
+				<option value="yellow">Kuning</option>
+				<option value="aqua">Aqua</option>
+				<option value="red">Merah</option>
+				<option value="green">Hijau</option>
+                </select>
+            </div>
+		</td>
+	</tr>
+</table>
+<style type="text/css">
+	#slt{
+		
+	}
+	#text{
+		
+	}
+	#box{
+        height: 200px;
+        width: 200px;
+	}
+</style>
+<script type="text/javascript">
+	var slt = document.getElementById('slt');
+	var box = document.getElementById('box');
+	var text = document.getElementById('text');
+	function chang_Color() {
+		box.style.background = slt.value;
+		text.style.color = slt1.value;
+	}
+</script>
+</body>
+</html>

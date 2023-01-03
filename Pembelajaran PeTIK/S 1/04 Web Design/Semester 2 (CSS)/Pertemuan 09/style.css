@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+body {
+    /* margin auto biar full body nya, gak ada jarak */
+    margin: 0 auto;
+}
+
+.container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 1200px;
+}
+
+.navbar {
+    background-color: #224870;
+    display: flex;
+    max-width: 1200px;
+    flex-direction: row;
+    padding: 0.3rem 3rem 0.3rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    color: white;
+    font-family: 'Tangerine';
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-list {
+    font-style: normal;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.item-list:hover {
+    color: #aec6d5;
+}

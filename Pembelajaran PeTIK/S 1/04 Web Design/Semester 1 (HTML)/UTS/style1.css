@@ -1,0 +1,61 @@
+.nav {
+    text-decoration: none;
+    background-color : blue;
+    padding: 5px;
+    margin-left: 300px;
+    width: fit-content;
+    background-size: auto;
+}
+.nav a {
+    text-decoration: none;
+    color: rgb(180, 187, 194);
+    margin-right: 5px;
+}
+.nav .navtitle {
+    font-weight: bold;
+    color: white;
+}
+input[type="text"] {
+    width: 120px;
+    border-radius: 5px;
+}
+input[type="button"] {
+    border-radius: 5px;
+}
+form {
+    margin-left: 900px;
+}
+.judul {
+    color: blue;
+    padding-top: 10px;
+    margin-left: 845px;
+}
+.row1 {
+    margin-left: 290px;
+    border-spacing: 20px;
+
+}
+.row2 {
+    margin-left: 330px;
+    margin-top: 20px;
+}
+.tdnav {
+    border: 0px;
+}
+.td1 {
+    text-align: center;
+    margin-right: -11px;
+    margin-left: -1px;
+    margin-top: -2px;
+}
+td {
+    border: 1px solid rgb(190, 186, 186);
+    border-radius: 10px;
+}
+.info1 {
+    margin-top: -12px;
+}
+.info2 {
+    margin-top: -8px;
+    margin-bottom: 5px;
+}

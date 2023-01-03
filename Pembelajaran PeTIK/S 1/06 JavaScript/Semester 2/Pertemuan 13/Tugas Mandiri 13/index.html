@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="alert('LOADING SELESAI')">
+    <div class="onload">
+        <h1>SELAMAT DATANG!!</h1>
+        <p>Jika kamu keluar data kamu akan dikirim</p>
+        <a href="https://www.tokopedia.com" alt="">Link</a>
+    </div>
+    <div class="onerror">
+        <p>Jika img error maka akan ada pemberitahuan</p>
+        <img src="https://blog.payrollbozz.com/wp-content/uploads/sites/28/2017/04/programmer.jpg"
+            onerror="myFunction()">
+    </div>
+</body>
+
+<script>
+    window.onbeforeunload = () => {
+        return "data"
+    }
+
+    function myFunction() {
+        alert('The image could not be loaded.');
+    }
+
+    let analyticsData = {}
+
+    window.addEventListener("unload", () => {
+        navigator.sendBeacon("/analytics", JSON.stringify(analyticsData))
+    } )
+</script>
+
+</html>

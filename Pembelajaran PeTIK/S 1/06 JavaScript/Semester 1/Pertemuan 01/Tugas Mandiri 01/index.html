@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mandiri 01</title>
+</head>
+
+<body>
+    
+</body>
+
+<script>
+    document.getElementsByTagName("head")[0].appendChild(document.createElement("title"))
+    document.getElementsByTagName("title")[0].innerText = "Tugas Mandiri 01"
+    
+    let body = document.getElementsByTagName("body")[0];
+    
+    let nm = document.createElement("teks");
+    body.appendChild(nm);
+    nm.innerText = "Username\t: "
+    
+    let inpnm = document.createElement("input");
+    body.appendChild(inpnm);
+    
+    let pass = document.createElement("teks");
+    body.appendChild(pass);
+    pass.innerText = "\n\nPassword\t: "
+    
+    let inpas = document.createElement("input");
+    inpas.setAttribute("type", "password")
+    body.appendChild(inpas);
+    document.write("<br>")
+    document.write("<br>")
+
+    let btn = document.createElement("button")
+    body.appendChild(btn);
+    btn.innerText = "Submit"
+</script>
+
+</html>

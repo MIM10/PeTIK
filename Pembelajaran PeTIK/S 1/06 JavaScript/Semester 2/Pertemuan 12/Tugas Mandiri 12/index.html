@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style type="text/css">
+        body {
+            background: #3498db;
+            font-family: sans-serif;
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        .login {
+            padding: 1rem;
+            margin: 2rem auto;
+            width: 25rem;
+            background: #fff;
+            border-radius: 3px;
+        }
+
+        label {
+            font-size: 10pt;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 8px;
+            width: 95%;
+            background: #efefef;
+            border: 0;
+            font-size: 10pt;
+            margin: 6px 0px;
+        }
+
+        .tombol {
+            background: #3498db;
+            color: #fff;
+            border: 0;
+            padding: 5px 8px;
+        }
+
+        table {
+            background-color: 4546df;
+        }
+    </style>
+    <link rel="stylesheet" href="css.css" />
+</head>
+
+<body>
+    <center>
+        <h2>Form Pendaftaran Mahasantri Baru</h2>
+    </center>
+    <div class="login">
+        <form action="#" method="POST" onSubmit="validasi()">
+            <table border="0">
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>:</td>
+                    <td><input type="text" name="Nama Lengkap" size=37 id="nama"/></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="text" name="Email" size=37 id="email"/></td>
+                </tr>
+    
+                <tr>
+                    <td>Tempat Lahir</td>
+                    <td>:</td>
+                    <td><input type="text" name="Tempat Lahir" size=37 /></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><select name="Tanggal">
+                            <option value="" selected="selected">Tanggal
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="Bulan">
+                            <option value="" selected="selected">Bulan
+                            <option value="Januari">Januari</option>
+                            <option value="Februari">Februari</option>
+                            <option value="Maret">Maret</option>
+                            <option value="April">April</option>
+                            <option value="Mei">Mei</option>
+                            <option value="Juni">Juni</option>
+                            <option value="Juli">Juli</option>
+                            <option value="Agustus">Agustus</option>
+                            <option value="September">September</option>
+                            <option value="Oktober">Oktober</option>
+                            <option value="Nopember">Nopember</option>
+                            <option value="Desember">Desember</option>
+                        </select>
+                        <select name="Tahun">
+                            <option value="" selected="selected">Tahun
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                            <option value="1989">1989</option>
+                            <option value="1988">1988</option>
+                            <option value="1987">1987</option>
+                            <option value="1986">1986</option>
+                            <option value="1985">1985</option>
+                            <option value="1984">1984</option>
+                            <option value="1983">1983</option>
+                            <option value="1982">1982</option>
+                            <option value="1981">1981</option>
+                            <option value="1980">1980</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td><input type="radio" name="sex" value="1" id="" /><label class="" for="">Laki-laki </label>
+                        <input type="radio" name="sex" value="2" id="" /><label class="" for="">Perempuan </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">Alamat Rumah</td>
+                    <td valign="top">:</td>
+                    <td><textarea cols=27 rows=5 name="Alamat Rumah" id="alamat"> </textarea></td>
+                </tr>
+                <tr>
+                    <td>Jurusan</td>
+                    <td>:</td>
+                    <td><select name="jurusan">
+                            <option value="" selected="selected">--Pilih Jurusan
+                            <option value="Komputerisasi Akutansi">Komputerisasi Akutansi</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Komputer Arsitektural">Komputer Arsitektural</option>
+                            <option value="Manajemen Informatika">Manajemen Informatika</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>:</td>
+                    <td><input type="checkbox" name="Olahraga">Olahraga
+                        <input type="checkbox" name="Musik">Musik
+                        <input type="checkbox" name="Lainnya">Lainnya
+                </tr>
+                <tr>
+                    <td>Foto Diri</td>
+                    <td>:</td>
+                    <td><input type="file" name"gambar" /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td><input type="submit" value="Daftar" class="tombol"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+<script>
+    function validasi() {
+        var nama = document.getElementById("nama").value;
+        var email = document.getElementById("email").value;
+        var alamat = document.getElementById("alamat").value;
+        if (nama != "" && email != "" && alamat != "") {
+            return true;
+        } else {
+            alert('Anda harus mengisi data dengan lengkap !');
+        }
+    }
+</script>
+
+</html>
