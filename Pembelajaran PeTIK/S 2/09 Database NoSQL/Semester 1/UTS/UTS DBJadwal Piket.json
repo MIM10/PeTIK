@@ -1,0 +1,113 @@
+[{
+  "_id": {
+    "$oid": "63e447514974691cc6dee2b1"
+  },
+  "bulan": "Januari",
+  "area": "Masjid",
+  "kamar": "Kamar 1"
+},{
+  "_id": {
+    "$oid": "63e447514974691cc6dee2b2"
+  },
+  "bulan": "Januari",
+  "area": "Asrama",
+  "kamar": "Kamar 2"
+},{
+  "_id": {
+    "$oid": "63e447514974691cc6dee2b3"
+  },
+  "bulan": "Januari",
+  "area": "Dapur",
+  "kamar": "Kamar 3"
+},{
+  "_id": {
+    "$oid": "63e447514974691cc6dee2b4"
+  },
+  "bulan": "Januari",
+  "area": "Lab",
+  "kamar": "Kamar 4"
+},{
+  "_id": {
+    "$oid": "63e4f5ea1d2b0c1210e6e688"
+  },
+  "bulan": "Februari",
+  "area": "Masjid",
+  "kamar": "Kamar 2"
+},{
+  "_id": {
+    "$oid": "63e4f6121d2b0c1210e6e68a"
+  },
+  "bulan": "Februari",
+  "area": "Asrama",
+  "kamar": "Kamar 3"
+},{
+  "_id": {
+    "$oid": "63e4f62b1d2b0c1210e6e68c"
+  },
+  "bulan": "Februari",
+  "area": "Dapur",
+  "kamar": "Kamar 4"
+},{
+  "_id": {
+    "$oid": "63e4f64a1d2b0c1210e6e68e"
+  },
+  "bulan": "Februari",
+  "area": "Lab",
+  "kamar": "Kamar 1"
+},{
+  "_id": {
+    "$oid": "63e4f6701d2b0c1210e6e690"
+  },
+  "bulan": "Maret",
+  "area": "Masjid",
+  "kamar": "Kamar 3"
+},{
+  "_id": {
+    "$oid": "63e4f68f1d2b0c1210e6e692"
+  },
+  "bulan": "Maret",
+  "area": "Asrama",
+  "kamar": "Kamar 4"
+},{
+  "_id": {
+    "$oid": "63e4f6ad1d2b0c1210e6e694"
+  },
+  "bulan": "Maret",
+  "area": "Dapur",
+  "kamar": "Kamar 1"
+},{
+  "_id": {
+    "$oid": "63e4f6be1d2b0c1210e6e696"
+  },
+  "bulan": "Maret",
+  "area": "Lab",
+  "kamar": "Kamar 2"
+},{
+  "_id": {
+    "$oid": "63e4f6dc1d2b0c1210e6e698"
+  },
+  "bulan": "April",
+  "area": "Masjid",
+  "kamar": "Kamar 4"
+},{
+  "_id": {
+    "$oid": "63e4f72a1d2b0c1210e6e69b"
+  },
+  "bulan": "April",
+  "area": "Asrama",
+  "kamar": "Kamar 1"
+},{
+  "_id": {
+    "$oid": "63e4f7501d2b0c1210e6e69d"
+  },
+  "bulan": "April",
+  "area": "Dapur",
+  "kamar": "Kamar 2"
+},{
+  "_id": {
+    "$oid": "63e4f75c1d2b0c1210e6e69f"
+  },
+  "bulan": "April",
+  "area": "Lab",
+  "kamar": "Kamar 3"
+}]
