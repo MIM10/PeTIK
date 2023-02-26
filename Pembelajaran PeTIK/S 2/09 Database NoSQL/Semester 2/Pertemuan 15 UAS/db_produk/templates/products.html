@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manage Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">Manage Products</h1>
+        <div class="overflow-x-auto rounded-lg border border-gray-200 bg-white">
+            <table class="min-w-full divide-y-2 divide-gray-200 text-sm">
+                <thead>
+                    <tr>
+                        <th class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
+                            No</th>
+                        <th class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
+                            Name
+                        </th>
+                        <th class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
+                            Description
+                        </th>
+                        <th class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
+                            Image
+                        </th>
+                        <th class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
+                            Price
+                        </th>
+                        <th class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody class="divide-y divide-gray-200">
+                    {% for product in products %}
+                    <tr class="odd:bg-gray-50">
+                        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                            {{ loop.index }}
+                        </td>
+                        {% if product.name %}
+                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                            {{ product.name }}
+                        </td>
+                        {% else %}
+                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                            -
+                        </td>
+                        {% endif %}
+                        {% if product.description %}
+                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                            {{ product.description }}
+                        </td>
+                        {% else %}
+                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                            -
+                        </td>
+                        {% endif %}
+                        {% if product.image %}
+                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                            {{ product.image }}
+                        </td>
+                        {% else %}
+                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                            -
+                        </td>
+                        {% endif %}
+                        {% if product.price %}
+                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                            {{ product.price }}
+                        </td>
+                        {% else %}
+                        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                            Free
+                        </td>
+                        {% endif %}
+                        <td class="whitespace-nowrap px-4 py-2">
+                            <a href="#"
+                                class="inline-block rounded bg-cyan-600 px-4 py-2 text-xs font-medium text-white hover:bg-cyan-700">
+                                View
+                            </a>
+                            <a href="#"
+                                class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
+                                Edit
+                            </a>
+                            <a href="#"
+                                class="inline-block rounded bg-red-600 px-4 py-2 text-xs font-medium text-white hover:bg-red-700">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

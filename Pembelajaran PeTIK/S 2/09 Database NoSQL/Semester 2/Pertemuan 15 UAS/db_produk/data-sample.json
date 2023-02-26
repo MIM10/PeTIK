@@ -1,0 +1,65 @@
+[
+    {
+        "_id": {
+            "$oid": "63f9fb7c0af2e14937a237ff"
+        },
+        "name": "Spotify Premium 1 Month",
+        "description": "Uninterrupted, high-quality music streaming with ad-free listening and access to exclusive content with Spotify Premium.",
+        "image": "img/spotify.png",
+        "price": "15.000"
+    },
+    {
+        "_id": {
+            "$oid": "63f9fb7c0af2e14937a23801"
+        },
+        "name": "Telegram Premium 1 Month",
+        "description": "Enhanced messaging experience with advanced privacy features, larger file transfers, and exclusive themes with Telegram Premium.",
+        "image": "img/telegram.png",
+        "price": "65.000"
+    },
+    {
+        "_id": {
+            "$oid": "63f9fb7c0af2e14937a23802"
+        },
+        "name": "YouTube Premium 1 Month",
+        "description": "Ad-free video streaming, background playback, and exclusive content from your favorite creators with YouTube Premium.",
+        "image": "img/youtube.png",
+        "price": "5.000"
+    },
+    {
+        "_id": {
+            "$oid": "63f9fb7c0af2e14937a23803"
+        },
+        "name": "Canva Pro 1 Month",
+        "description": "Unlimited access to Canva's full library of templates, graphics, and fonts with Canva Pro.",
+        "image": "img/canva.png",
+        "price": "15.000"
+    },
+    {
+        "_id": {
+            "$oid": "63f9fb7c0af2e14937a23804"
+        },
+        "name": "Discord Nitro 1 Month",
+        "description": "Enhanced Discord experience with animated avatars, custom emojis, and access to exclusive content with Discord Nitro.",
+        "image": "img/discord.png",
+        "price": "50.000"
+    },
+    {
+        "_id": {
+            "$oid": "63f9fb7c0af2e14937a23805"
+        },
+        "name": "Zoom Pro 1 Month",
+        "description": "Effortless, high-quality video conferencing with advanced features for larger meetings and webinars with Zoom Pro.",
+        "image": "img/zoom.png",
+        "price": "180.000"
+    },
+    {
+        "_id": {
+            "$oid": "63fa0e140af2e14937a23806"
+        },
+        "name": "Product Example",
+        "description": "Just another product sample.",
+        "image": "",
+        "price": ""
+    }
+]

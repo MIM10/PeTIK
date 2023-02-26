@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Digital Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">Digital Products</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for product in products %}
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                {% if product.image %}
+                <div class="h-48 bg-cover bg-center"
+                    style="background-image: url('{{ url_for('static', filename=product.image) }}')"></div>
+                {% else %}
+                <div class="h-48 bg-cover bg-center"
+                    style="background-image: url('{{ url_for('static', filename='img/default.png') }}')"></div>
+                {% endif %}
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">{{ product.name }}</h2>
+                    <p class="text-gray-700 text-base">{{ product.description }}</p>
+                    {% if product.price %}
+                    <p class="text-gray-900 text-xl font-bold mt-2">
+                        Rp. {{ product.price }}
+                    </p>
+                    {% else %}
+                    <p class="text-red-500 text-xl font-bold mt-2">Free</p>
+                    {% endif %}
+                    <a href="#"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 inline-block">Buy
+                        Now</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>
